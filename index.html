@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VELORA — Contemporary Luxury</title>
+<meta name="description" content="VELORA — timeless womenswear, menswear, leather footwear, and considered accessories.">
+<meta name="theme-color" content="#F7F5F0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="logo/logo1.webp">
+</head>
+<body>
+<a class="skip" href="#app">Skip to content</a>
+<div class="announce">Complimentary shipping on orders over €500 · A considered wardrobe, made to last</div>
+<header class="hdr" id="hdr">
+  <button class="ib mob-only" data-act="menu" aria-label="Open menu" aria-expanded="false" id="menuBtn"></button>
+  <nav class="nav" aria-label="Primary">
+    <a href="#/shop/new">New Arrivals</a>
+    <a href="#/shop/women">Women</a>
+    <a href="#/shop/men">Men</a>
+    <a href="#/shop/shoes">Shoes</a>
+    <a href="#/shop/accessories">Accessories</a>
+    <a href="#/collections">Collections</a>
+    <a href="#/about">About</a>
+  </nav>
+  <a href="#/" class="logo" aria-label="VELORA home">VELORA</a>
+  <div class="tools">
+    <button class="ib" data-act="search" aria-label="Search" id="i-search"></button>
+    <button class="ib desk-only" data-act="account" aria-label="Account" id="i-user"></button>
+    <a class="ib" href="#/wishlist" aria-label="Wishlist" id="i-heart"><span class="badge" id="wcount">0</span></a>
+    <button class="ib" data-act="bag" aria-label="Open shopping bag" id="i-bag"><span class="badge" id="ccount">0</span></button>
+  </div>
+</header>
+
+<main id="app" tabindex="-1"></main>
+
+<footer class="ftr">
+  <div class="wrap ftr-grid">
+    <div><div class="logo sm">VELORA</div><p class="muted">Contemporary luxury. Timeless fashion.</p></div>
+    <div><h4>Shop</h4><a href="#/shop">All</a><a href="#/shop/women">Women</a><a href="#/shop/men">Men</a><a href="#/shop/shoes">Shoes</a><a href="#/shop/accessories">Accessories</a><a href="#/wishlist">Wishlist</a></div>
+    <div><h4>Maison</h4><a href="#/about">About</a><a href="#/collections">Collections</a><a href="#/cart">Shopping Bag</a></div>
+    <div><h4>Care</h4><a href="#/about">Craftsmanship</a><button data-act="info" data-t="Shipping & Returns" data-m="Complimentary shipping over €500, otherwise €25. Returns accepted within 30 days (demo copy).">Shipping & Returns</button><button data-act="info" data-t="Contact" data-m="concierge@velora.example — demo address.">Contact</button></div>
+  </div>
+  <div class="wrap fine">© 2026 VELORA. A front-end demonstration project — no real transactions.</div>
+  <div class="wrap credit"><span>Designed &amp; Developed by</span><a href="https://www.instagram.com/wr1kko/?next=%2F" target="_blank" rel="noopener noreferrer" aria-label="Visit wr1kko on Instagram (opens in a new tab)"><svg class="ig-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="18" cy="6" r="1.1" fill="currentColor" stroke="none"/></svg><span>wr1kko</span></a></div>
+</footer>
+
+<div class="scrim" id="scrim" data-act="close"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Shopping bag" tabindex="-1"></aside>
+<div class="overlay" id="searchOv" role="dialog" aria-modal="true" aria-label="Search" tabindex="-1"></div>
+<div class="modal" id="modal" role="dialog" aria-modal="true" tabindex="-1"></div>
+<nav class="mobnav" id="mobnav" aria-label="Mobile" tabindex="-1"></nav>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
